@@ -1,0 +1,209 @@
+@font-face {
+    font-family: robotoslab;
+    src: url(../assets/RobotoSlab-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    height: 100%;
+    background: linear-gradient(to bottom, #232427, #3c4451, #686d76);
+    background-attachment: fixed;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  
+  h1, h2, h3, p{
+    color: white;
+  }
+  
+  h3{
+    font-family: robotoslab;
+    margin: 10px 0;
+    
+  }
+  
+  p{
+    font-family: roboto;
+  }
+  
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 800px;
+    background: linear-gradient(to bottom, #2b2f37, #40474d);
+    border: 2px solid #2b2f37;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px #00000080;
+  }
+  
+  .about-me h2 {
+    font-size: 30px;
+    font-family: robotoslab;
+    margin-bottom: 20px;
+  }
+  
+  .about-me p {
+    font-size: 20px;
+    font-family: roboto;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .about-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .technologies-section {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  .technology {
+    text-align: center;
+    margin: 15px; 
+  }
+  .card-container{
+    height: 700px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+  }
+  
+  .container .card {
+    position: relative;
+    min-width: 375px;
+    height: 600px;
+    box-shadow:   
+                inset 5px 5px 5px #fffefe33, 
+                inset -5px -5px 15px #ffffff1a,
+                      5px 5px 15px #0000004d, 
+                      -5px -5px 15px #ffffff1a;
+    border-radius: 15px;
+    margin: 30px;
+  }
+  
+  .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: linear-gradient(to bottom, #2b2f37, #40474d);
+    border: 2px solid #2b2f37;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px #00000080;
+    transition: 0.5s;
+  }
+  
+  .container .card .box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 30px 50px #000080
+  }
+  
+  .content{
+    width: 90%;
+    margin: auto;
+  }
+  
+  .card-image {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .text-section{
+    height: 120px;
+  }
+  
+  .button {
+    display: block;
+    text-align: center;
+    border: solid #000000;
+    color: #ffffff;
+    border-radius: 15px;
+    width: 200px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #00000080;
+    box-shadow: 
+                inset 5px 5px 5px #00000033, 
+                inset -5px -5px 15px #ffffff1a,
+                    5px 5px 15px #0000004d, 
+                    -5px -5px 15px #ffffff1a;
+    font-family: droid;
+  }
+  
+  .button:hover {
+    background-color: #008CBA;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 500px) {
+   .about-image{
+    width: 300px;
+    height: 300px;
+   }
+  
+   .container .card {
+    min-width: 275px;
+    height: 500px;
+  }
+  
+  
+  .text-section{
+    height: 100px;
+  }
+  
+  .button {
+    width: 150px;
+    height: 60px;
+  }
+  }
+  
+  @media only screen and (max-width: 375px){
+    .about-image{
+      width: 200px;
+      height: 200px;
+    }
+    .container .card {
+      min-width: 250px;
+      height: 500px;
+    }
+  }

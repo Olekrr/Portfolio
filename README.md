@@ -1,6 +1,6 @@
 # Meta Corner
 
-![logo](assets/pointism.png)
+![logo](assets/readmepicture.png)
 
 Welcome to my (very temporary) portfolio!
 
